@@ -3,14 +3,18 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { CatpostsComponent } from './catposts/catposts.component';
+import { AppRoutingModule } from './app-routes.module';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CatpostsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
