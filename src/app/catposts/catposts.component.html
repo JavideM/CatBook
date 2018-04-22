@@ -1,3 +1,6 @@
 <p>
-  catposts works!
+  Cat post list goes here:
 </p>
+<div *ngFor='let cat of cats'>
+  <app-catpostdetail [cat]='cat'></app-catpostdetail>
+</div>
