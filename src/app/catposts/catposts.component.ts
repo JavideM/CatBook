@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CatDetails } from '../shared/models/catdetail-model';
 
 @Component({
   selector: 'app-catposts',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./catposts.component.css']
 })
 export class CatpostsComponent implements OnInit {
-  cats: string[] = [
-    'Buttons',
-    'Waffles',
-    'Biscuit'
+  cats: CatDetails[] = [
+    { name: 'Buttons', gender: 'M', age: 1, description: '...', color: 'black',
+    profileImg: 'https://pbs.twimg.com/profile_images/2370446440/6e2jwf7ztbr5t1yjq4c5_400x400.jpeg' },
+    { name: 'Waffles', gender: 'M', age: 1, description: '...', color: 'black',
+    profileImg: 'https://pbs.twimg.com/profile_images/2370446440/6e2jwf7ztbr5t1yjq4c5_400x400.jpeg' },
+    { name: 'Biscuit', gender: 'M', age: 1, description: '...', color: 'black',
+    profileImg: 'https://pbs.twimg.com/profile_images/2370446440/6e2jwf7ztbr5t1yjq4c5_400x400.jpeg' },
+    { name: 'Kuro', gender: 'M', age: 1, description: '...', color: 'black',
+    profileImg: 'https://pbs.twimg.com/profile_images/2370446440/6e2jwf7ztbr5t1yjq4c5_400x400.jpeg' }
   ];
 
   constructor() { }

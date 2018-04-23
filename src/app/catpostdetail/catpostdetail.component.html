@@ -1,21 +1,21 @@
 
 <div class='row' style='margin-bottom: 11px; padding: 7px; font-family: sans-serif; background-color: white'>
   <div class='col-md-3'>
-    <img width='180' src='https://pbs.twimg.com/profile_images/2370446440/6e2jwf7ztbr5t1yjq4c5_400x400.jpeg' />
+    <img width='180' src='{{ cat.profileImg }}' />
   </div>
   <div class='col-md-8'>
     <div class='row'>
         <div class='col-md-3'>
-            <p>Name: <i>{{cat}}</i></p>
+            <p>Name: <i>{{ cat.name }}</i></p>
           </div>
           <div class='col-md-3'>
-            <p>Age:</p>
+            <p>Age: <i>{{ cat.age }}</i></p>
           </div>
           <div class='col-md-3'>
-            <p>Gender:</p>
+            <p>Gender: <i>{{ cat.gender }}</i></p>
           </div>
           <div class='col-md-3'>
-            <p>Color:</p>
+            <p>Color: <i>{{ cat.color }}</i></p>
           </div>
     </div>
     <div class='row'>
@@ -25,7 +25,7 @@
     </div>
     <div class='row' style='height:100px;'>
       <div class='col-md-12' style='border: 1px solid black'>
-        Mock Description
+        {{cat.description}}
       </div>
     </div>
     <div class='row'>

@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { CatDetails } from '../shared/models/catdetail-model';
 
 @Component({
   selector: 'app-catpostdetail',
@@ -6,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./catpostdetail.component.css']
 })
 export class CatpostdetailComponent implements OnInit {
-  @Input() cat: string;
+  @Input() cat: CatDetails;
 
   constructor() { }
 
