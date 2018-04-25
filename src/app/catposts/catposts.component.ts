@@ -18,6 +18,11 @@ export class CatpostsComponent implements OnInit {
     profileImg: 'https://pbs.twimg.com/profile_images/2370446440/6e2jwf7ztbr5t1yjq4c5_400x400.jpeg' }
   ];
 
+  addCat: (CatDetails) => boolean = function(cat: CatDetails): boolean{
+    this.cats.push(cat);
+    return true;
+  }
+
   constructor() { }
 
   ngOnInit() {

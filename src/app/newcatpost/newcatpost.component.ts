@@ -8,7 +8,12 @@ import { CatDetails } from '../shared/models/catdetail-model';
 })
 export class NewcatpostComponent implements OnInit {
   cat: CatDetails;
-  @Input() postCat: (CatDetails) => void;
+  @Input() postCat: (cat: CatDetails) => boolean;
+  postClick: () => void = function(){
+    if(this.postCat(this.cat)){
+      this.cat = new CatDetails();
+    }
+  }
 
   constructor() {
       this.cat = new CatDetails();

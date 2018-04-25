@@ -1,4 +1,4 @@
-<app-newcatpost></app-newcatpost>
+<app-newcatpost [postCat]='addCat.bind(this)'></app-newcatpost>
 <div class='row' style='margin-left: auto; margin-right: auto;'>
   <div *ngFor='let cat of cats' class='col-md-12'>
     <app-catpostdetail [cat]='cat'></app-catpostdetail>
