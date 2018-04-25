@@ -1,9 +1,9 @@
 
 <div class='row' style='margin-bottom: 11px; padding: 7px; font-family: sans-serif; background-color: white'>
-  <div class='col-md-3'>
+  <div class='col-md-2'>
     <img width='180' src='{{ cat.profileImg }}' />
   </div>
-  <div class='col-md-8'>
+  <div class='col-md-10'>
     <div class='row'>
         <div class='col-md-3'>
             <p>Name: <i>{{ cat.name }}</i></p>
@@ -24,14 +24,14 @@
       </div>
     </div>
     <div class='row' style='height:100px;'>
-      <div class='col-md-12' style='border: 1px solid black'>
-        {{cat.description}}
+      <div class='col-md-12'>
+        <div style='width: 100%' class='form-data'>{{cat.description}}</div>
       </div>
     </div>
     <div class='row'>
       <div class='col-md-4'>4.3 Stars</div>
       <div class='col-md-4'></div>
-      <div class='col-md-4'>(43) Comments</div>
+      <div class='col-md-4' style='text-align: right'>(43) Comments</div>
     </div>
   </div>
 </div>

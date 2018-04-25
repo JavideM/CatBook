@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
 import { CatpostsComponent } from './catposts/catposts.component';
 import { AppRoutingModule } from './app-routes.module';
 import { CatpostdetailComponent } from './catpostdetail/catpostdetail.component';
@@ -20,7 +21,8 @@ import { CoreModule } from './core/core.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CoreModule
+    CoreModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
