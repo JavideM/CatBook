@@ -1,6 +1,6 @@
-<app-newcatpost [postCat]='addCat.bind(this)'></app-newcatpost>
-<div class='row' style='margin-left: auto; margin-right: auto;'>
-  <div *ngFor='let cat of cats' class='col-md-12'>
-    <app-catpostdetail [cat]='cat'></app-catpostdetail>
+<app-newcatpost [postCat]="addCat.bind(this)"></app-newcatpost>
+<div class="row" style="margin-left: auto; margin-right: auto;">
+  <div *ngFor="let cat of catsOrdered()" class="col-md-12">
+    <app-catpostdetail [cat]="cat"></app-catpostdetail>
   </div>
 </div>

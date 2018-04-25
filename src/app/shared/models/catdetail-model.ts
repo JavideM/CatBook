@@ -5,4 +5,9 @@ export class CatDetails {
     color: string;
     description: string;
     profileImg: string;
+    createDate: Date;
+
+    constructor () {
+        this.createDate = new Date();
+    }
 }
