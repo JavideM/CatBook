@@ -4,7 +4,7 @@ import { CatDetails } from '../shared/models/catdetail-model';
 @Component({
   selector: 'app-newcatpost',
   templateUrl: './newcatpost.component.html',
-  styleUrls: ['./newcatpost.component.css']
+  styleUrls: []
 })
 export class NewcatpostComponent implements OnInit {
   cat: CatDetails;

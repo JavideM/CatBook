@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routes.module';
 import { CatpostdetailComponent } from './catpostdetail/catpostdetail.component';
 import { NewcatpostComponent } from './newcatpost/newcatpost.component';
 import { CoreModule } from './core/core.module';
+import { SharedModule } from './shared/shared.module';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { CoreModule } from './core/core.module';
     BrowserModule,
     AppRoutingModule,
     CoreModule,
+    SharedModule,
     FormsModule
   ],
   providers: [],
