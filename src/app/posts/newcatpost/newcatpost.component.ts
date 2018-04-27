@@ -1,5 +1,5 @@
 import { Component, OnInit, Output, Input } from '@angular/core';
-import { CatDetails } from '../shared/models/catdetail-model';
+import { CatDetails } from '../../shared/models/catdetail-model';
 
 @Component({
   selector: 'app-newcatpost',
