@@ -1,37 +1,48 @@
-
-<div class='row' style='margin-bottom: 11px; padding: 7px; font-family: sans-serif; background-color: white'>
-  <div class='col-md-2'>
-    <img width='180' src='{{ cat.profileImg }}' />
-  </div>
-  <div class='col-md-10'>
-    <div class='row'>
-        <div class='col-md-3'>
-            <p>Name: <i>{{ cat.name }}</i></p>
-          </div>
-          <div class='col-md-3'>
-            <p>Age: <i>{{ cat.age }}</i></p>
-          </div>
-          <div class='col-md-3'>
-            <p>Gender: <i>{{ cat.gender }}</i></p>
-          </div>
-          <div class='col-md-3'>
-            <p>Color: <i>{{ cat.color }}</i></p>
-          </div>
-    </div>
-    <div class='row'>
-      <div class='col-md-12'>
-        Description:
+<div class="row">
+  <div class="col-md-12">
+    <div class='row' style='margin-bottom: 11px;padding: 7px;font-family: sans-serif;background-color: white; '>
+      <div class='col-md-2'>
+        <img width='180' src='{{ cat.profileImg }}' />
       </div>
-    </div>
-    <div class='row' style='height:100px;'>
-      <div class='col-md-12'>
-        <div style='width: 100%' class='form-data'>{{cat.description}}</div>
+      <div class='col-md-10'>
+        <div class='row'>
+          <div class='col-md-3'>
+            <p>Name:
+              <i>{{ cat.name }}</i>
+            </p>
+          </div>
+          <div class='col-md-3'>
+            <p>Age:
+              <i>{{ cat.age }}</i>
+            </p>
+          </div>
+          <div class='col-md-3'>
+            <p>Gender:
+              <i>{{ cat.gender }}</i>
+            </p>
+          </div>
+          <div class='col-md-3'>
+            <p>Color:
+              <i>{{ cat.color }}</i>
+            </p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-md-12'>
+            Description:
+          </div>
+        </div>
+        <div class='row' style='height:100px;'>
+          <div class='col-md-12'>
+            <div style='width: 100%' class='form-data'>{{cat.description}}</div>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-md-4'>4.3 Stars</div>
+          <div class='col-md-4'></div>
+          <div class='col-md-4' style='text-align: right'>(43) Comments</div>
+        </div>
       </div>
-    </div>
-    <div class='row'>
-      <div class='col-md-4'>4.3 Stars</div>
-      <div class='col-md-4'></div>
-      <div class='col-md-4' style='text-align: right'>(43) Comments</div>
     </div>
   </div>
 </div>
